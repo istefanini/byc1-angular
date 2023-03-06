@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="upload-container" 
+         (dragover)="onDragOver($event)" 
+         (dragleave)="onDragLeave($event)"
+         (drop)="onDrop($event)">
+      subir
+      <span>Arrastra y suelta un archivo o haz clic para seleccionar</span>
+      <input type="file" (change)="onFileSelected($event)">
+    </div>
+  </div>
+  
